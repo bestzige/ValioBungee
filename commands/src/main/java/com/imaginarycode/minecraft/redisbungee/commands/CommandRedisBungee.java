@@ -60,7 +60,7 @@ public class CommandRedisBungee extends AdventureBaseCommand {
                 Placeholder.component("version", Component.text(Constants.VERSION)),
                 Placeholder.component(
                     "commit",
-                    Component.text(Constants.GIT_COMMIT.substring(0, 8))
+                    Component.text(Constants.getGitCommitDisplay())
                         .clickEvent(ClickEvent.openUrl(Constants.getGithubCommitLink()))
                         .hoverEvent(HoverEvent.showText(Component.text("Click me to open: " + Constants.getGithubCommitLink())))
                 )));
